@@ -1,6 +1,6 @@
 # Metadata-Extraction-using-ExifTool-log2timeline-and-Hidden-Data-Search-using-Steganography-Tools
-### Name : Karthick P
-### Reg.No : 212222100021
+### Name : Jerowin Geo J A
+### Reg.No : 212223100016
 ## AIM:
 To extract metadata, perform timeline analysis, and search for hidden data using forensic tools like ExifTool, log2timeline, and steganography detection tools.
 
@@ -18,15 +18,15 @@ Apply steganography detection tools like steghide, zsteg, or binwalk to uncover 
 Metadata and Timeline Forensics, Steganography Analysis Steps
 
 ## OUTPUT:
-### ✅ A. Using ExifTool – for file metadata
-#### 📦 Install:
+### A. Using ExifTool – for file metadata
+#### Install:
 sudo apt update
 sudo apt install exiftool -y
-#### 📂 Extract metadata from a file:
+#### Extract metadata from a file:
 exiftool image.jpg
-#### 📁 Batch process a folder:
+#### Batch process a folder:
 exiftool -r /path/to/folder
-#### 📌 Useful flags:
+#### Useful flags:
 ```
 - G: Show metadata group
 ```
@@ -36,7 +36,7 @@ exiftool -r /path/to/folder
 ```
 - GPSLatitude -GPSLongitude: Extract GPS data
 ````
-![435680836-861dc1d1-4932-460d-9261-2e3295ee9f42](https://github.com/user-attachments/assets/8192aafb-f53b-4b92-ab1f-09b2f572028a)
+![image](https://github.com/user-attachments/assets/bee2fe7f-4e87-4d9f-858e-47767f321ff2)
 
 
 ### install log2timeline
@@ -53,14 +53,14 @@ sudo apt install steghide -y
 ```
 steghide embed -cf /home/kali/Downloads/wallpaper.jpg -ef /home/kali/Downloads/secret.txt
 ```
-![image](https://github.com/user-attachments/assets/4791e632-ca36-4e1f-9149-5633f480d1fc)
+![image](https://github.com/user-attachments/assets/b686c4cd-b4f9-45f5-9984-8dfbc6e256f3)
 
 ## -Extract hidden data:
 ```
 steghide extract -sf hidden.jpg
 ```
 
-![435686036-85520110-9150-417a-b6a9-28e559100cf7](https://github.com/user-attachments/assets/014c88ff-4f61-40d3-b9f3-1ffef40fc018)
+![image](https://github.com/user-attachments/assets/ab37f716-86a8-43cf-a453-44fb08c55db5)
 
 
 ## Using binwalk – for file analysis
@@ -71,7 +71,7 @@ binwalk suspicious.jpg
 ```
 binwalk /home/kali/Downloads/wallpaper.jpg
 ```
-![435687161-b26be271-0680-491f-8868-1216de6fd7eb](https://github.com/user-attachments/assets/2298b20a-6f79-4231-99e6-b48f7860732c)
+![image](https://github.com/user-attachments/assets/02c84426-074b-4259-8f48-1d599da13374)
 
 
 ## RESULT:
